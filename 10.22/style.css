@@ -1,0 +1,33 @@
+/* 
+
+CSS - Rules
+
+selector {
+    property: value;
+    property1: value1;
+    property2: value2
+}
+
+*/
+
+
+.turshilt {
+    background-color: #e84393;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid #7c23e7;
+    width: 400px;
+}
+
+#miniiId {
+    background-color: palegreen;
+    color: orangered;
+}
+
+/* 5 torliin text */
+/* https://flatuicolors.com/ */
+
+/* hgjfdglsgjsflgfsjgjdl */

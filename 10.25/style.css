@@ -1,0 +1,51 @@
+/* .title {
+    color: red;
+} */
+
+/* Pseudo-Class - selector:classNer */
+/* .title:hover {
+    color: yellow;
+    background-color: red;
+} */
+/* Box model - margin, padding */
+/* devtools - Browser Developing tools */
+/* .title {
+    width: max-content;
+    border: 5px solid #000;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+
+.title1 {
+    width: max-content;
+    border: 5px solid #000;
+} */
+
+/* Elementiin torol */
+/* 1. Inline Element */
+/* 2. Block Element */
+
+/* display */
+/* input {
+    display: block;
+    margin-bottom: 16px;
+}
+
+h1 {
+    display: inline-block;
+} */
+
+.box {
+    width: 30%;
+    height: 200px;
+    background-color: orangered;
+    display: inline-block;
+}
+.last {
+    margin: 0 !important;
+}
+/* html5 , CSS3 */
+/* flexbox, gridbox */
+ul {
+    list-style: none;
+}
