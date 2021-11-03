@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GRID BOX - 2 хэмжээст layout */
+/* fr - fraction */
+.wrap {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 400px 200px 100px;
+}
+
+.menu {
+    background-color: orangered;
+    grid-row: 1/-1;
+    grid-column:1/2;
+}
+
+.main {
+    background-color: #34495e;
+    grid-column: 2/-1;
+}
+
+.banner {
+    background-color: #f1c40f;
+    grid-column: 2/-1;
+}
+
+.green {
+    background-color: #1abc9c;
+}
+
+.skyblue {
+    background-color: #7ed6df;
+}
