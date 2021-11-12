@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* position */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #34495e;
+}
+
+.header .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header .menu .list-item {
+  padding: 1rem 2rem;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.header .menu .list-item:hover {
+  color: #34495e;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header .menu .list-item .dropdown {
+  position: absolute;
+  width: max-content;
+  list-style: none;
+  top: 100%;
+  left: 0;
+  border: 1px solid #ccc;
+  opacity: 0;
+  visibility: hidden;
+  transition: .1s;
+  background:url(https://www.yolo.mn/img/content_image/cover_image/111120211636602819_1854758118.jpeg) center;
+  background-size: cover;
+}
+
+.header .menu .list-item:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .menu .list-item .dropdown li {
+  padding: 10px 1rem;
+}
+
+.header .menu .list-item .dropdown li:hover {
+    background-color: #ff0;
+}
