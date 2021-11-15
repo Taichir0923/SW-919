@@ -136,3 +136,7 @@ label .btn {
 .toggle:checked ~ .navigation {
     left: 0;
 }
+
+#test:target {
+    background-color: violet;
+}
