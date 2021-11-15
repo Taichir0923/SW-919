@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    background-color: yellowgreen;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    
+}
+
+.header h3 {
+    margin-left: 10px;
+}
+
+.header .menu {
+    padding: 5px;
+}
+
+.header .menu .line {
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    position: relative;
+    transition: .3s;
+}
+
+.header .menu .line::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    top: -4px;
+    transition: .4s;
+}
+
+.header .menu .line::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    left: 0;
+    bottom: -4px;
+    transition: .4s;
+}
+
+label .btn {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+
+.toggle:checked + .label .btn .line {
+    background-color: transparent;
+}
+
+.toggle:checked + .label .btn .line::before {
+    transform: rotate(315deg);
+    top: 0;
+}
+.toggle:checked + .label .btn .line::after {
+    transform: rotate(-315deg);
+    bottom: 0;
+}
