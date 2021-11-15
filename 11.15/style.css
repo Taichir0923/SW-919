@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .header {
     width: 100%;
     display: flex;
@@ -25,7 +29,7 @@
 .header .menu .line {
     width: 15px;
     height: 1px;
-    background-color: black;
+    background-color: white;
     position: relative;
     transition: .3s;
 }
@@ -35,7 +39,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: white;
     left: 0;
     top: -4px;
     transition: .4s;
@@ -46,7 +50,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: white;
     left: 0;
     bottom: -4px;
     transition: .4s;
@@ -55,7 +59,7 @@
 label .btn {
     width: 30px;
     height: 30px;
-    background-color: white;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,4 +77,62 @@ label .btn {
 .toggle:checked + .label .btn .line::after {
     transform: rotate(-315deg);
     bottom: 0;
+}
+
+.navigation {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 100%;
+    background-color: turquoise;
+    transition: .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.navigation .navlist {
+    width: 200px;
+    text-align: center;
+    list-style: none;
+}
+
+.navigation .navlist li {
+    padding: 10px 0;
+    width: 100%;
+    margin: .5rem;
+    transition: .3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation .navlist li p {
+    position: relative;
+    z-index: 30;
+}
+
+.navigation .navlist li::before {
+    content: "";
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    right: 120%;
+    top: 0;
+    transition: .4s ease;
+    transform: skew(-30deg);
+}
+
+.navigation .navlist li:hover {
+    color: turquoise;
+    cursor: pointer;
+}
+
+.navigation .navlist li:hover::before {
+    right: 20px;
+}
+
+.toggle:checked ~ .navigation {
+    left: 0;
 }
