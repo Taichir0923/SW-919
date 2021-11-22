@@ -1,0 +1,50 @@
+/* media query */
+
+/* 
+    extra small       ==> xs < 576px
+    small             ==> 576px <= sm < 768px
+    medium            ==> 768px <= md < 1024px
+    large             ==> 1024px <= lg < 1150px
+    extra large       ==> 1150px <= xl < 1400px
+    extra extra large ==> 1400 <= xxl
+*/
+
+/*
+
+1. Desktop first
+2. Mobile first
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+}
+
+.wrap .box {
+    width: 100%;
+    background-color: orangered;
+    border-radius: 10px;
+}
+
+@media (min-width: 768px){
+    .wrap {
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: repeat(2, 200px);
+    }
+
+    .wrap .box:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1/-1;
+    }
+}
