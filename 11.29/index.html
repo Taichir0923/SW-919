@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <header class="header">
+        <div class="container"></div>
+    </header>
+    <div class="slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="https://lend.mn/image/carousel/banner.jpg" />
+              </div>
+              <div class="swiper-slide">
+                  <video muted loop autoplay src="https://lend.mn/image/carousel/v1.mp4"></video>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+        new Swiper('.swiper', {
+            loop: true
+        })
+    </script>
+</body>
+</html>
