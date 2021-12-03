@@ -1,0 +1,23 @@
+.main {
+    width: 100%;
+    margin: 1rem 0;
+    .wrap {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        .box {
+            height: 250px;
+            background-color: $mainBg;
+            border-radius: 10px;
+            color: white;
+            @include flexCenter(center , center , row);
+        }
+        @media (max-width: 996px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 662px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}

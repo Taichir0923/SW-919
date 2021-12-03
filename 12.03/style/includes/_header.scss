@@ -1,0 +1,56 @@
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $mainBg;
+    color: white;
+
+    img {
+        width: 200px;
+        margin-left: 1rem;
+    }
+
+    .menu__desktop {
+        display: flex;
+        list-style: none;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        li {
+            padding: 1rem 2rem;
+            transition: .3s;
+            &:hover {
+                background-color: white;
+                color: $mainBg;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .menu__mobile {
+        display: none;
+        padding: 1rem;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        .menu__desktop {
+            display: none;
+        }
+
+        .menu__mobile {
+            display: block;
+        }
+    }
+}
+
+// sass
+
+// 1. Partials
+// 2. Variables
+// 3. Mixin - function
+
+// 2x - 8 = 10; => x = 9;
+// 2ax - 8 = 10;
