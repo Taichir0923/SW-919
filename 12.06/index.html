@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js" integrity="sha512-Kr+RPfLjQ71E0cJ9nseJ6jwTrnmMnuSPnnsVQQ/ZYYCjOHKfJcWj8ILICXnvf9A7ZQChNzIbr9x/ZAxA6xAZlQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <section class="test yellow">
+            <div class="row">
+                <p id="testAnime">
+                    <img src="https://i.guim.co.uk/img/media/03734ee186eba543fb3d0e35db2a90a14a5d79e3/0_173_5200_3120/master/5200.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=9c30ed97ea8731f3e2a155467201afe3" alt="">
+                </p>
+
+                <p id="testAnime1">
+                    <img src="https://i.guim.co.uk/img/media/03734ee186eba543fb3d0e35db2a90a14a5d79e3/0_173_5200_3120/master/5200.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=9c30ed97ea8731f3e2a155467201afe3" alt="">
+                </p>
+            </div>
+        </section>
+        <section class="test red"></section>
+
+        <script>
+            // ScrollReveal().reveal('.yellow' , {
+            //     origin: 'left',
+            //     distance: '200px',
+            //     duration: 1000,
+            //     delay: 300
+            // });
+
+            ScrollReveal().reveal('.red' , {
+                origin: 'right',
+                distance: '200px',
+                duration: 1000,
+                delay: 300
+            })
+
+            anime({
+                targets: '#testAnime',
+                translateX: 900,
+                color: ['#000' , '#f00' , '#fff'],
+                backgroundColor: ['#fff' , '#0f0' , '#000'],
+                borderRadius: ['0%' , '50%'],
+                duration: 5000
+            })
+            anime({
+                targets: '#testAnime1',
+                translateX: -900,
+                color: ['#000' , '#f00' , '#fff'],
+                backgroundColor: ['#fff' , '#0f0' , '#000'],
+                borderRadius: ['0%' , '50%'],
+                duration: 5000
+            })
+        </script>
+    </body>
+</html>
