@@ -34,7 +34,6 @@
     <script>
         new Swiper('.swiper' , {
             spaceBetween: 30,
-            slidesPerView: 3,
             loop: true,
             navigation: {
                 nextEl: '.next',
@@ -44,7 +43,16 @@
                 el: '.swiper-pagination',
                 clickable: true
             },
-            autoplay: true
+            autoplay: true,
+            breakpoints: {
+                470: {
+                    slidesPerView: 2  
+                },
+
+                768: {
+                    slidesPerView: 3
+                }
+            }
         })
     </script>
 </body>
