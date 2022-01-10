@@ -185,14 +185,14 @@
 
 // ` - backtic
 
-var str1 = "hello";
-var str2 = "world";
+// var str1 = "hello";
+// var str2 = "world";
 
-var example = `${str1} ${str2}`;
+// var example = `${str1} ${str2}`;
 
 
-var indexing = "Hello world";
-var too = 12473289;
+// var indexing = "Hello world";
+// var too = 12473289;
 
 // length - стринг дотор нийт хэдэн ширхэг тэмдэгт байгааг тоолж харуулна
 // toString() - тоог стринг болгож хувиргана
@@ -223,3 +223,4 @@ var too = 12473289;
 // 3. оролт: "aabbccdd" => "abcd"
 // 4. оролт: "aabbccdd" => "aabbdd"
 // 5. оролт: "Hello" => "olleH"
+
