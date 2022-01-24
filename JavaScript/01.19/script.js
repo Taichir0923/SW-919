@@ -103,78 +103,125 @@
 // person.nas = 22;
 // person.id = '1234567'
 
-var members = [];
+// var members = [];
 
-var person1 = {
-    ner: "Narada",
-    mail: "narada@mail.com",
-    utas: 99887766,
-    password: "pass123"
-}
+// var person1 = {
+//     ner: "Narada",
+//     mail: "narada@mail.com",
+//     utas: 99887766,
+//     password: "pass123"
+// }
 
-var person2 = {
-    ner: "Steve",
-    mail: "steve@mail.com",
-    utas: 99227766,
-    password: "pass123"
-}
+// var person2 = {
+//     ner: "Steve",
+//     mail: "steve@mail.com",
+//     utas: 99227766,
+//     password: "pass123"
+// }
 
-var person3 = {
-    ner: "Bob",
-    mail: "bob@mail.com",
-    utas: 99117766,
-    password: "pass123"
-}
+// var person3 = {
+//     ner: "Bob",
+//     mail: "bob@mail.com",
+//     utas: 99117766,
+//     password: "pass123"
+// }
 
-var person4 = {
-    ner: "John",
-    mail: "john@mail.com",
-    utas: 99127766,
-    password: "pass123"
-}
+// var person4 = {
+//     ner: "John",
+//     mail: "john@mail.com",
+//     utas: 99127766,
+//     password: "pass123"
+// }
 
-var person5 = {
-    ner: "James",
-    mail: "james@mail.com",
-    utas: 99123466,
-    password: "pass123"
-}
+// var person5 = {
+//     ner: "James",
+//     mail: "james@mail.com",
+//     utas: 99123466,
+//     password: "pass123"
+// }
 
-members.push(person1 , person2 , person3 , person4 , person5);
+// members.push(person1 , person2 , person3 , person4 , person5);
 
-var email = prompt('Email haygaa oruul');
-var password = prompt('Nuuts ugee oruul');
+// var email = prompt('Email haygaa oruul');
+// var password = prompt('Nuuts ugee oruul');
 
-// 1. email bolon nuuts ugiig garaas oruulj  huvsagchind hadgal
-// 2. members massiv dr davtalt hj garaas oruulsan email taarj bgaa hereglegchiig haij oloh;
-// 3. hereglegch oldohgui bol, email esvel nuuts ug buruu baina gsn utgiig consold hevleh
-// 4. oldson tohioldold nuuts ugiig shalgah
-// 5. nuuts ug taarahgui bol, email esvel nuuts ug buruu baina gsn utgiig consold hevleh
-// 6. nuuts ug taarsan bol tavtai moril gj hevleh
+// // 1. email bolon nuuts ugiig garaas oruulj  huvsagchind hadgal
+// // 2. members massiv dr davtalt hj garaas oruulsan email taarj bgaa hereglegchiig haij oloh;
+// // 3. hereglegch oldohgui bol, email esvel nuuts ug buruu baina gsn utgiig consold hevleh
+// // 4. oldson tohioldold nuuts ugiig shalgah
+// // 5. nuuts ug taarahgui bol, email esvel nuuts ug buruu baina gsn utgiig consold hevleh
+// // 6. nuuts ug taarsan bol tavtai moril gj hevleh
 
-var found = false;
-var passwordMatched = false;
-var validForm = true;
-if(email.trim() !== '' && password.trim() !== ''){
-    for(var i = 0; i < members.length; i++){
-        if(members[i].mail === email){
-            found = true;
-            if(members[i].password === password){
-                passwordMatched = true;
-                console.log("Welcome " + members[i].ner)
-            }
+// var found = false;
+// var passwordMatched = false;
+// var validForm = true;
+// if(email.trim() !== '' && password.trim() !== ''){
+//     for(var i = 0; i < members.length; i++){
+//         if(members[i].mail === email){
+//             found = true;
+//             if(members[i].password === password){
+//                 passwordMatched = true;
+//                 console.log("Welcome " + members[i].ner)
+//             }
 
-            break;
-        }
-    }
-} else {
-    validForm = false;
-}
+//             break;
+//         }
+//     }
+// } else {
+//     validForm = false;
+// }
 
-if(validForm === true){
-    if(found === false || passwordMatched === false){
-        console.log('email esvel nuuts ug buruu baina')
-    }
-} else {
-    console.log('Invalid input')
-}
+// if(validForm === true){
+//     if(found === false || passwordMatched === false){
+//         console.log('email esvel nuuts ug buruu baina')
+//     }
+// } else {
+//     console.log('Invalid input')
+// }
+
+// var arr = [3 , 4 , 1 , 7 , 9 , 2];
+// var target = 9;
+
+// var result = [];
+
+// [3 , 5]
+
+// 3 + 4 ,1 ,7, 9  , 2
+// 4 + 1 , 7 , 9 , 2
+// 1 + 7 , 9 , 2
+// 7 + 9 , 2
+
+// for(var i = 0; i < arr.length; i++){
+//     for(var j = i + 1; j < arr.length; j++){
+//         // console.log(arr[i] , arr[j])
+//         if(arr[i] + arr[j] === target){
+//             result.push(i , j);
+//         }
+//     }
+// }
+
+// median - dundaj
+
+// var arr = [2 , 5 , 14 , 23 , 43 , 76];
+// var sortedArray = arr.sort((a , b) => a - b);
+// var midIndex;
+// var median;
+
+// if(sortedArray.length % 2 == 0){
+//     midIndex = sortedArray.length/2;
+//     median = (arr[midIndex] + arr[midIndex - 1]) / 2
+// } else {
+//     midIndex = Math.floor(sortedArray.length/2);
+//     median = arr[midIndex]
+// }
+// 33.5 median 
+
+// [12 , 13 , 31 , 41 , 43]
+// 31
+
+
+// sort - sort((a , b) => a - b) - massiv dotorh utguudiig eremblene
+
+
+// function
+// ALgorithm hel
