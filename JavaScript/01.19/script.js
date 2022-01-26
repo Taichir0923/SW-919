@@ -137,7 +137,8 @@
 //     ner: "James",
 //     mail: "james@mail.com",
 //     utas: 99123466,
-//     password: "pass123"
+//     password: "pass123",
+//     length: 12
 // }
 
 // members.push(person1 , person2 , person3 , person4 , person5);
@@ -225,3 +226,43 @@
 
 // function
 // ALgorithm hel
+// function - Программыг бүрдүүлж буй жижиг хэсэг
+
+// {} - scope
+// scope хаалтан дотор зарласан хувьсагч тухайн хаалтын гадна
+// ажиллахгүй бөгөөд тухайн хувьсагчыг local хувьсагч.
+
+// 
+// var nas = 23;
+
+// function makeVar(){
+//     var torsonOn = +prompt('Төрсөн оноо  оруул');
+//     var age = 2022 - torsonOn;
+//     return age;
+// }
+
+
+
+// console.log(greet);
+
+function ex1(){
+    var too1 = +prompt('x');
+    var too2 = +prompt('y');
+    var too3 = +prompt('z');
+
+    var counter = 0;
+
+    if(too1 === 0){
+        counter++
+    }
+
+    if(too2 === 0){
+        counter++
+    }
+
+    if(too3 === 0){
+        counter++;
+    }
+
+    return "Ta " + counter + " ширхэг 0-тэй тэнцүү тоо орууллаа";
+}
