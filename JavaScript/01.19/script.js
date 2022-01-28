@@ -245,24 +245,47 @@
 
 // console.log(greet);
 
-function ex1(){
-    var too1 = +prompt('x');
-    var too2 = +prompt('y');
-    var too3 = +prompt('z');
+// function ex1(){
+//     var too1 = +prompt('x');
+//     var too2 = +prompt('y');
+//     var too3 = +prompt('z');
 
-    var counter = 0;
+//     var counter = 0;
 
-    if(too1 === 0){
-        counter++
+//     if(too1 === 0){
+//         counter++
+//     }
+
+//     if(too2 === 0){
+//         counter++
+//     }
+
+//     if(too3 === 0){
+//         counter++;
+//     }
+
+//     return "Ta " + counter + " ширхэг 0-тэй тэнцүү тоо орууллаа";
+// }
+
+var lengthOfLongestSubstring = function() {
+    var str = "gjkfsdjglkds";
+    var result = 0;
+
+    for(var i = 0; i < str.length; i++){
+        var subString = str[i];
+        for(var j = i + 1; j < str.length; j++){
+            if(subString.includes(str[j])){
+                break;
+            } else {
+                subString += str[j];
+            }
+        }
+        var maxLength = subString.length;
+        result = Math.max(maxLength , result);
+        if(result > str.slice(i + 1).length){
+            break;
+        }
     }
 
-    if(too2 === 0){
-        counter++
-    }
-
-    if(too3 === 0){
-        counter++;
-    }
-
-    return "Ta " + counter + " ширхэг 0-тэй тэнцүү тоо орууллаа";
-}
+    return result;
+};
