@@ -267,25 +267,25 @@
 //     return "Ta " + counter + " ширхэг 0-тэй тэнцүү тоо орууллаа";
 // }
 
-var lengthOfLongestSubstring = function() {
-    var str = "gjkfsdjglkds";
-    var result = 0;
+// var lengthOfLongestSubstring = function() {
+//     var str = "gjkfsdjglkds";
+//     var result = 0;
 
-    for(var i = 0; i < str.length; i++){
-        var subString = str[i];
-        for(var j = i + 1; j < str.length; j++){
-            if(subString.includes(str[j])){
-                break;
-            } else {
-                subString += str[j];
-            }
-        }
-        var maxLength = subString.length;
-        result = Math.max(maxLength , result);
-        if(result > str.slice(i + 1).length){
-            break;
-        }
-    }
+//     for(var i = 0; i < str.length; i++){
+//         var subString = str[i];
+//         for(var j = i + 1; j < str.length; j++){
+//             if(subString.includes(str[j])){
+//                 break;
+//             } else {
+//                 subString += str[j];
+//             }
+//         }
+//         var maxLength = subString.length;
+//         result = Math.max(maxLength , result);
+//         if(result > str.slice(i + 1).length){
+//             break;
+//         }
+//     }
 
-    return result;
-};
+//     return result;
+// };
