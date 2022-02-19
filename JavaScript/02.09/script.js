@@ -149,20 +149,20 @@
 // }
 
 // Гэрт: DOM Event listener (click event dr ng jishee)
-const headingTag = document.querySelector("#title");
-const backdrop = document.querySelector("#backdrop");
-const modal = document.querySelector(".modal");
-const input = document.querySelector("#input");
-function testEvent(){
-    backdrop.style.opacity = "0.5";
-    backdrop.style.visibility = "visible";
-    modal.classList.add('openModal')
-}
+// const headingTag = document.querySelector("#title");
+// const backdrop = document.querySelector("#backdrop");
+// const modal = document.querySelector(".modal");
+// const input = document.querySelector("#input");
+// function testEvent(){
+//     backdrop.style.opacity = "0.5";
+//     backdrop.style.visibility = "visible";
+//     modal.classList.add('openModal')
+// }
 
-function closeModal (){
-    headingTag.innerHTML = input.value;
-    backdrop.style.opacity = "0";
-    backdrop.style.visibility = "hidden";
-    modal.classList.remove('openModal')
-}
+// function closeModal (){
+//     headingTag.innerHTML = input.value;
+//     backdrop.style.opacity = "0";
+//     backdrop.style.visibility = "hidden";
+//     modal.classList.remove('openModal')
+// }
 // gert
