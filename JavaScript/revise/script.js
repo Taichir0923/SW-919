@@ -26,27 +26,27 @@
 // var torsonOn = 2022 - myFunction();
 
 // 100 hurtelh buh 7-d huvaagddag toonii niilberiig butsaadag function bich
-function sumUpTo(){
-    var sum = 0;
-    for(var i = 0; i < 100; i++){
-        if(i%7 === 0){
-            sum += i
-        }
-    }
-    return sum;
-}
+// function sumUpTo(){
+//     var sum = 0;
+//     for(var i = 0; i < 100; i++){
+//         if(i%7 === 0){
+//             sum += i
+//         }
+//     }
+//     return sum;
+// }
 
-function sumFive(){
-    var sum = 0;
-    for(var i = 0; i < 100; i++){
-        if(i%5 === 0){
-            sum += i
-        }
-    }
-    return sum;
-}
+// function sumFive(){
+//     var sum = 0;
+//     for(var i = 0; i < 100; i++){
+//         if(i%5 === 0){
+//             sum += i
+//         }
+//     }
+//     return sum;
+// }
 
-function zoruu(){
-    return Math.abs(sumUpTo() - sumFive())
-}
+// function zoruu(){
+//     return Math.abs(sumUpTo() - sumFive())
+// }
 // 100 hurtelh 7-d huvaagddag toonuudiin niilber bolon , buh 5-d huvaagddag toonuudiin niilberuuriin zoruug butsaah function bich
