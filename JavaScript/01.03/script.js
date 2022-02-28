@@ -224,3 +224,7 @@
 // 4. оролт: "aabbccdd" => "aabbdd"
 // 5. оролт: "Hello" => "olleH"
 
+
+// github.com/taichir0923/sw-919
+
+// loop , function
