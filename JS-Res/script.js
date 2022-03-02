@@ -15,17 +15,17 @@
     // perform
     
     
-function testParameterFunction(month , day){
-    var days = [31 , 28 , 31 , 30 , 31 , 30 , 31 , 31 , 30 , 31 , 30 , 31];
+// function testParameterFunction(month , day){
+//     var days = [31 , 28 , 31 , 30 , 31 , 30 , 31 , 31 , 30 , 31 , 30 , 31];
 
-    days = days.slice(month);
-    days[0] = days[0] - day;
+//     days = days.slice(month);
+//     days[0] = days[0] - day;
 
-    // console.log(days[month] - day);
+//     // console.log(days[month] - day);
     
-    var restDays = days.reduce((a , b) => a + b);
-    return restDays;
-} 
+//     var restDays = days.reduce((a , b) => a + b);
+//     return restDays;
+// } 
 
 // 90 - 120
 
@@ -44,3 +44,30 @@ function testParameterFunction(month , day){
 // x = 9
 
 // assignment 
+
+// good programmer 
+// great programmer 
+// arrays , object , loop , function 
+
+// arrays , object
+
+// var x = 45;
+
+// var 
+// 
+// dynamic type
+// static type
+
+// typescript
+// 
+
+var arr = [12 , "ghdfjk" , true]
+
+// js is 100% valid ts
+// 
+
+// arr.push()
+
+// console.log(bla);
+
+// let bla = "fbsj"
