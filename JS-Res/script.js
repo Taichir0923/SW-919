@@ -61,7 +61,7 @@
 // typescript
 // 
 
-var arr = [12 , "ghdfjk" , true]
+// var arr = [12 , "ghdfjk" , true]
 
 // js is 100% valid ts
 // 
@@ -71,3 +71,36 @@ var arr = [12 , "ghdfjk" , true]
 // console.log(bla);
 
 // let bla = "fbsj"
+// DOM - Document Object Model
+// querySelector - selector
+
+
+// divTag.style.border = "2px solid #000";
+
+// divTag.children[0].style.backgroundColor = "red";
+// divTag.children[0].style.color = "white";
+
+// divTag = "gjfdlk";
+// class => className
+// camelCase => background-color -----> backgroundColor
+/**
+ * 
+ * hun {
+ *    ner: "Baatar"
+ * }
+ * 
+ */
+
+// innerHTML - tag oruulna
+// innerText - text
+// textContent - text
+const divTag = document.querySelector('#container');
+const input = document.querySelector('input[type=text]')
+
+function changeBG(){
+    divTag.style.backgroundColor = "red";
+    divTag.style.color = "#fff";
+    divTag.innerHTML += input.value;
+}
+
+// Todo List
