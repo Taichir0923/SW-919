@@ -94,13 +94,13 @@
 // innerHTML - tag oruulna
 // innerText - text
 // textContent - text
-const divTag = document.querySelector('#container');
-const input = document.querySelector('input[type=text]')
+// const divTag = document.querySelector('#container');
+// const input = document.querySelector('input[type=text]')
 
-function changeBG(){
-    divTag.style.backgroundColor = "red";
-    divTag.style.color = "#fff";
-    divTag.innerHTML += input.value;
-}
+// function changeBG(){
+//     divTag.style.backgroundColor = "red";
+//     divTag.style.color = "#fff";
+//     divTag.innerHTML += input.value;
+// }
 
 // Todo List
