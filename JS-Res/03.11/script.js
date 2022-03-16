@@ -5,6 +5,7 @@ const container = document.querySelector('.container');
 // "" , ''
 // ``
 
+
 // container.innerHTML = container.innerHTML + val
 function getTextValue(){
     const imageFiles = file.files;
@@ -22,4 +23,5 @@ function getTextValue(){
 
 // Гэрт: Хэрэглэгч бүртгэх форм
 
-// 
+// modal дотор хэрэглэгч бүртгэх форм оруулах...
+// Бүртгэсэн хэрэглэгчийн нэрийг нүүр хуудсанд хэвлэх
