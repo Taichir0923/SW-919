@@ -16,9 +16,9 @@ const account1 = {
 account1.movements = account1.movements.map(function (el) {
   var month = Math.floor(Math.random() * 12);
   var day;
-  if(month == 1){
+  if (month == 1) {
     day = Math.floor(Math.random() * 28) + 1;
-  } else if ((month < 7 && month%2 == 0) || (month >= 7 && month%2 == 1)){
+  } else if ((month < 7 && month % 2 == 0) || (month >= 7 && month % 2 == 1)) {
     day = Math.floor(Math.random() * 31) + 1;
   } else {
     day = Math.floor(Math.random() * 30) + 1;
@@ -40,9 +40,9 @@ const account2 = {
 account2.movements = account2.movements.map(function (el) {
   var month = Math.floor(Math.random() * 12);
   var day;
-  if(month == 1){
+  if (month == 1) {
     day = Math.floor(Math.random() * 28) + 1;
-  } else if ((month < 7 && month%2 == 0) || (month >= 7 && month%2 == 1)){
+  } else if ((month < 7 && month % 2 == 0) || (month >= 7 && month % 2 == 1)) {
     day = Math.floor(Math.random() * 31) + 1;
   } else {
     day = Math.floor(Math.random() * 30) + 1;
@@ -71,9 +71,9 @@ const account4 = {
 account3.movements = account3.movements.map(function (el) {
   var month = Math.floor(Math.random() * 12);
   var day;
-  if(month == 1){
+  if (month == 1) {
     day = Math.floor(Math.random() * 28) + 1;
-  } else if ((month < 7 && month%2 == 0) || (month >= 7 && month%2 == 1)){
+  } else if ((month < 7 && month % 2 == 0) || (month >= 7 && month % 2 == 1)) {
     day = Math.floor(Math.random() * 31) + 1;
   } else {
     day = Math.floor(Math.random() * 30) + 1;
@@ -87,9 +87,9 @@ account3.movements = account3.movements.map(function (el) {
 account4.movements = account4.movements.map(function (el) {
   var month = Math.floor(Math.random() * 12);
   var day;
-  if(month == 1){
+  if (month == 1) {
     day = Math.floor(Math.random() * 28) + 1;
-  } else if ((month < 7 && month%2 == 0) || (month >= 7 && month%2 == 1)){
+  } else if ((month < 7 && month % 2 == 0) || (month >= 7 && month % 2 == 1)) {
     day = Math.floor(Math.random() * 31) + 1;
   } else {
     day = Math.floor(Math.random() * 30) + 1;
@@ -128,6 +128,17 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
-btnLogin.addEventListener('click' , function(e){
+btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
+  const email = inputLoginUsername.value;
+  const user = accounts.find(user => user.email == email);
+  if (user) {
+    if (user.pin === +inputLoginPin.value) {
+      containerApp.style.opacity = 1;
+    } else {
+      alert('err')
+    }
+  } else {
+    alert('err')
+  }
 })
