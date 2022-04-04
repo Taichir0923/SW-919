@@ -128,17 +128,39 @@ const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
 
+let loggedUser;
+
 btnLogin.addEventListener('click', function (e) {
   e.preventDefault();
   const email = inputLoginUsername.value;
   const user = accounts.find(user => user.email == email);
   if (user) {
     if (user.pin === +inputLoginPin.value) {
-      containerApp.style.opacity = 1;
+      loggedUser = user;
+      updateUi(user);
     } else {
       alert('err')
     }
   } else {
     alert('err')
   }
-})
+});
+
+function updateUi(user){
+  containerApp.style.opacity = 1;
+  updateList(user.movements);
+}
+
+function updateList(list){
+  containerMovements.innerHTML = '';
+  list.forEach((el , index) => {
+    const type = el.value < 0 ? "withdrawal" : "deposit"
+    containerMovements.insertAdjacentHTML('afterbegin' , `
+      <div class="movements__row">
+        <div class="movements__type movements__type--${type}">${index + 1} ${type}</div>
+        <div class="movements__date">${el.date}</div>
+        <div class="movements__value">${el.value}€</div>
+      </div>
+    `)
+  })
+}
