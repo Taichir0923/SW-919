@@ -107,3 +107,38 @@
 //         this.ner = ner;
 //     };
 // };
+
+// QUIZ - Test
+class Quiz {
+    constructor(question , answers , correct){
+        this.question = question;
+        this.answers = answers;
+        this.correct = correct;
+    }
+
+    printQuestion () {
+        console.log(this.question);
+        this.answers.forEach((answer , index) => {
+            console.log(`${index}: ${answer}`)
+        })
+    };
+
+    checkAnswer (ans) {
+        if(this.correct == ans){
+            console.log("Зөв хариуллаа... Баяр хүргэе")
+        } else {
+            console.log("Буруу байна... Дахин оролдоно уу...")
+        }
+    }
+}
+
+// 1. 2-n kvadrat hed ve?
+// 2. [2 , 1 , 0 , 4]
+// 3. 3
+
+const question = new Quiz("2-n kvadrat hed ve?" , [2 , 1 , 0 , 4] , 3);
+
+// 5 asuult
+
+question.printQuestion();
+question.checkAnswer(prompt("Зөв хариултын индексийг оруул"))
