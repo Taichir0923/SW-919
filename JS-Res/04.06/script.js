@@ -109,36 +109,65 @@
 // };
 
 // QUIZ - Test
-class Quiz {
+class Question{
     constructor(question , answers , correct){
         this.question = question;
         this.answers = answers;
         this.correct = correct;
     }
-
+    
     printQuestion () {
         console.log(this.question);
         this.answers.forEach((answer , index) => {
             console.log(`${index}: ${answer}`)
         })
     };
-
+    
     checkAnswer (ans) {
+        let result = false;
         if(this.correct == ans){
-            console.log("Зөв хариуллаа... Баяр хүргэе")
+            console.log("Зөв хариуллаа... Баяр хүргэе");
+            result = true;
         } else {
             console.log("Буруу байна... Дахин оролдоно уу...")
         }
+
+        return result;
     }
 }
+class Quiz {
+    questions = [];
+    onoo = 0;
+    insertQuestion(question , answers , correct){
+        const newQ = new Question(question , answers , correct);
+        this.questions.push(newQ);
+    }
+}
+
+const quiz = new Quiz();
+
 
 // 1. 2-n kvadrat hed ve?
 // 2. [2 , 1 , 0 , 4]
 // 3. 3
 
-const question = new Quiz("2-n kvadrat hed ve?" , [2 , 1 , 0 , 4] , 3);
+const question = new Question("2-n kvadrat hed ve?" , [2 , 1 , 0 , 4] , 3);
+const question1 = new Question("2-n kub hed ve?" , [2 , 8 , 0 , 4] , 1);
+const question2 = new Question("2-n 4 zereg hed ve?" , [2 , 1 , 16 , 4] , 2);
+const question3 = new Question("2-n 5 zereg hed ve?" , [2 , 1 , 0 , 32] , 3);
+const question4 = new Question("2-n 6 zereg hed ve?" , [64 , 1 , 0 , 4] , 0);
 
-// 5 asuult
+// // 5 asuult
+const questionsList = [question , question1 , question2 , question3 , question4];
 
-question.printQuestion();
-question.checkAnswer(prompt("Зөв хариултын индексийг оруул"))
+quiz.questions = questionsList;
+
+
+
+quiz.questions.forEach((asuult) => {
+    asuult.printQuestion();
+    var result = asuult.checkAnswer(prompt("Зөв хариултын индексийг оруул"));
+    if(result){
+        quiz.onoo++;
+    }
+});
